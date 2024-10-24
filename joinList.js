@@ -11,6 +11,18 @@
 
 // Write our function (we must define it too!) below
 // ...
+const joinList = function(array){
+  //have a place to store items from array
+  let sentence = '';
+  //loop through array and get each element
+  for(let item of array){
+    //add items to sentence, could add comma here too
+    sentence += item + ', ';
+    // get rid of last comma in sentence
+  }
+  //return sentence
+  return sentence;
+};
 
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];

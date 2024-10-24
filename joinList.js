@@ -12,15 +12,10 @@
 // Write our function (we must define it too!) below
 // ...
 const joinList = function(array){
-  //have a place to store items from array
   let sentence = '';
-  //loop through array and get each element
-  for(let item of array){
-    //add items to sentence, could add comma here too
-    sentence += item + ', ';
-    // get rid of last comma in sentence
+  for(let item in array){
+    item  != array.length - 1 ? sentence += `${array[item]}, ` : sentence += `${array[item]}.`
   }
-  //return sentence
   return sentence;
 };
 
